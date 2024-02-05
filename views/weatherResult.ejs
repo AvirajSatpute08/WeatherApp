@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Result</title>
+    <style>
+        body {
+            background-image: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80");
+            background-size: cover;
+          
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin:0;
+            height: 100vh;
+            
+          }
+          
+
+        form {
+            border: 2px solid #fff; 
+            border-radius: 20px; 
+            padding: 20px; 
+            width: 380px; 
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 50px;
+            background: linear-gradient(to left,
+                    violet,
+                    indigo,
+                    blue,
+                    green,
+                    yellow,
+                    orange,
+                    red);
+            -webkit-background-clip: text;
+            color: transparent;
+            
+        }
+
+        p {
+            margin: 10px 0;
+            border: 1px solid #fff; 
+            padding: 10px; 
+            border-radius: 8px; 
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Weather Result</h1>
+      <center><h2>📍<%= location %> </h2></center>    
+        <b><p>🦯🌡Temperature: <%= temperature %>°C</p></b>
+        <b><p>🦯🌡Temperature min: <%= tempMin %>°C</p></b>
+        <b><p>🦯🌡Temperature max: <%= tempMax %>°C</p></b>
+        <b><p>💧💧Humidity: <%= humidity %>%</p></b>
+        <b><p>🌫🌫Wind Speed: <%= windSpeed %> kph</p></b>
+    </form>
+</body>
+</html>

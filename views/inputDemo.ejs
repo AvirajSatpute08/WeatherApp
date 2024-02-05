@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9759a7;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://unsplash.it/600/400?image=1043&blur");
+            background-size: cover;
+          
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            background: linear-gradient(to left,
+                    violet,
+                    indigo,
+                    blue,
+                    green,
+                    yellow,
+                    orange,
+                    red);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        form {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #eecc0c;
+            border-radius: 8px solid rgb(128, 109, 0);
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: 1px solid red;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #a72127;
+        }
+    </style>
+</head>
+<body>
+    <form action="/weather" method="get">
+
+        <center><b><h1>WEATHER APP</h1></b></center><br><br>
+        <center>
+       <b> City: </b><input type="text" name="city">
+        <input type="submit" value="SHOW">
+    </center>
+    </form>
+</body>
+</html>
